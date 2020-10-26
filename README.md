@@ -1,7 +1,7 @@
 # TriangleAPI automated test coverage
 
 ## Test cases
-### Functional tests (can be used a smoke tests)
+### Functional tests (can be used as smoke tests)
 * Add a triangle
 * Add a triangle with another separator
 * Delete a triangle
