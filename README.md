@@ -14,8 +14,8 @@
 * Add over 10 triangles
 * Add a triangle with a long side
 * Add a triangle with a negative side
-* Add a triangle with zero-side">
-* Add a triangle with 2 sides">
+* Add a triangle with zero-side
+* Add a triangle with 2 sides
 * Get an unexisting triangle
 * Perform a request using invalid token
 
