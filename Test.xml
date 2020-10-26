@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Tests">
+    <!-- functional cases -->
+    <test name="Add a triangle">
+        <classes>
+            <class name="triangleAPI.functionalTest">
+                <methods>
+                    <include name="testAdd"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Add a triangle with another separator">
+        <classes>
+            <class name="triangleAPI.functionalTest">
+                <methods>
+                    <include name="testAddWithSeparator"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Delete a triangle">
+        <classes>
+            <class name="triangleAPI.functionalTest">
+                <methods>
+                    <include name="testDelete"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Get all triangles">
+        <classes>
+            <class name="triangleAPI.functionalTest">
+                <methods>
+                    <include name="testGetAll"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Get a triangle">
+        <classes>
+            <class name="triangleAPI.functionalTest">
+                <methods>
+                    <include name="testGet"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Get perimeter">
+        <classes>
+            <class name="triangleAPI.functionalTest">
+                <methods>
+                    <include name="testGetPerimeter"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Get area">
+        <classes>
+            <class name="triangleAPI.functionalTest">
+                <methods>
+                    <include name="testGetArea"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- edge cases -->
+    <test name="Add over 10 triangles">
+        <classes>
+            <class name="triangleAPI.edgeTest">
+                <methods>
+                    <include name="testAddOver10Triangles"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Add a triangle with a long side">
+        <classes>
+            <class name="triangleAPI.edgeTest">
+                <methods>
+                    <include name="testAddLongSideTriangle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Add a triangle with a negative side">
+        <classes>
+            <class name="triangleAPI.edgeTest">
+                <methods>
+                    <include name="testAddTriangleWithNegativeSide"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Add a triangle with zero-side">
+        <classes>
+            <class name="triangleAPI.edgeTest">
+                <methods>
+                    <include name="testAddTriangleWithZeroSide"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Add a triangle with 2 sides">
+        <classes>
+            <class name="triangleAPI.edgeTest">
+                <methods>
+                    <include name="testAddTriangleWith2Sides"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Get an unexisting triangle">
+        <classes>
+            <class name="triangleAPI.edgeTest">
+                <methods>
+                    <include name="testGetUnexistingTriangle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Perform a request using invalid token">
+        <classes>
+            <class name="triangleAPI.edgeTest">
+                <methods>
+                    <include name="testInvalidTokenCheck"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
