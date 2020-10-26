@@ -20,5 +20,5 @@
 * Perform a request using invalid token
 
 ## Existing bugs
-* It is possible to add 11 triangles to the subset. Expected: only 10 triangles can be added
+* It is possible to add 11 triangles to the subset. Expected: only 10 triangles can be added.
 * It is possible to add a triangle with a negative side length value. 
